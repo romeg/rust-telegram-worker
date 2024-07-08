@@ -1,0 +1,16 @@
+---
+version: "3"
+
+dotenv: [".config.env"]
+
+tasks:
+  default:
+    cmds:
+      - task --list-all
+    silent: true
+  publish:
+    cmds:
+      - wrangler publish
+  sync-secrets:
+    cmds:
+      - echo "To be implemented"
